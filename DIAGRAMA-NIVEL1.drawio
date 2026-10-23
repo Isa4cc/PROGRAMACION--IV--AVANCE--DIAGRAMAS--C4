@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="BeDJoAuirvegVQL4DwrK">
+    <mxGraphModel dx="1348" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontColor=#1E3A8A;" value="&lt;b&gt;Diagrama de Contexto del Sistema (C4 - Nivel 1)&lt;/b&gt;&lt;br&gt;OmniSpace: plataforma de coworking y espacios deportivos" vertex="1">
+          <mxGeometry height="50" width="700" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;arcSize=10;fontSize=12;" value="&lt;b&gt;Cliente&lt;/b&gt;&lt;br&gt;[Persona]&lt;br&gt;&lt;br&gt;Profesional o deportista que busca y reserva espacios de trabajo y canchas" vertex="1">
+          <mxGeometry height="130" width="260" x="100" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;arcSize=10;fontSize=12;" value="&lt;b&gt;Propietario / Administrador de Sede&lt;/b&gt;&lt;br&gt;[Persona]&lt;br&gt;&lt;br&gt;Gestiona sedes, espacios, tarifas y consulta métricas de rendimiento" vertex="1">
+          <mxGeometry height="130" width="260" x="520" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;arcSize=10;fontSize=12;" value="&lt;b&gt;Administrador del Sistema&lt;/b&gt;&lt;br&gt;[Persona]&lt;br&gt;&lt;br&gt;Administra usuarios, roles, propietarios y moderación de la plataforma" vertex="1">
+          <mxGeometry height="130" width="260" x="940" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sys" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E3A8A;fontColor=#ffffff;strokeColor=#142A66;arcSize=8;fontSize=13;" value="&lt;b&gt;OmniSpace&lt;/b&gt;&lt;br&gt;[Sistema de software]&lt;br&gt;&lt;br&gt;Plataforma que unifica reservas de coworking y de infraestructura deportiva (reservas híbridas), con pagos, tarifas dinámicas, reseñas y analítica de negocio" vertex="1">
+          <mxGeometry height="190" width="400" x="450" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Pasarela de Pago&lt;/b&gt;&lt;br&gt;[Sistema externo]&lt;br&gt;&lt;br&gt;Procesa pagos con tarjeta y billeteras digitales" vertex="1">
+          <mxGeometry height="130" width="260" x="40" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Proveedor de Identidad OAuth 2.0&lt;/b&gt;&lt;br&gt;[Sistema externo]&lt;br&gt;&lt;br&gt;Autenticación federada de usuarios" vertex="1">
+          <mxGeometry height="130" width="260" x="370" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Azure OpenAI&lt;/b&gt;&lt;br&gt;[Sistema externo]&lt;br&gt;&lt;br&gt;Servicio de IA para el chatbot de reservas y soporte" vertex="1">
+          <mxGeometry height="130" width="260" x="700" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Servicio de Mapas y Geolocalización&lt;/b&gt;&lt;br&gt;[Sistema externo]&lt;br&gt;&lt;br&gt;Ubicación de sedes y validación de cercanía" vertex="1">
+          <mxGeometry height="130" width="260" x="1030" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="p1" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="sys" value="Busca, reserva, paga&lt;br&gt;y califica espacios">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="p2" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="sys" value="Gestiona espacios, tarifas&lt;br&gt;y consulta el dashboard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="p3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="sys" value="Administra usuarios,&lt;br&gt;roles y moderación">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="sys" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="e1" value="Procesa pagos y reembolsos&lt;br&gt;[HTTPS/REST]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="sys" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="e2" value="Autentica usuarios&lt;br&gt;[OAuth 2.0]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="sys" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="e3" value="Interpreta lenguaje natural&lt;br&gt;[HTTPS/REST]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="sys" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="e4" value="Consulta ubicación y mapas&lt;br&gt;[HTTPS/REST]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;fontSize=10;" value="Persona" vertex="1">
+          <mxGeometry height="26" width="90" x="40" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E3A8A;fontColor=#ffffff;strokeColor=#142A66;fontSize=10;" value="Sistema OmniSpace" vertex="1">
+          <mxGeometry height="26" width="120" x="140" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;fontSize=10;" value="Sistema externo" vertex="1">
+          <mxGeometry height="26" width="110" x="270" y="840" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

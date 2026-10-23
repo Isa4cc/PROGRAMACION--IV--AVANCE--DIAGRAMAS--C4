@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="XxREcj9a43jRPvaT7z5Q">
+    <mxGraphModel dx="2466" dy="1443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontColor=#1E3A8A;" value="&lt;b&gt;Diagrama de Contenedores (C4 - Nivel 2)&lt;/b&gt;&lt;br&gt;OmniSpace: Monolito Modular sobre .NET 8/9" vertex="1">
+          <mxGeometry height="50" width="700" x="20" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#1E3A8A;strokeWidth=2;dashed=1;dashPattern=8 4;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="630" width="1160" x="20" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary_lbl" parent="1" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#1E3A8A;" value="&lt;b&gt;OmniSpace&lt;/b&gt; [Límite del sistema]" vertex="1">
+          <mxGeometry height="30" width="290" x="880" y="822" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;arcSize=10;fontSize=12;" value="&lt;b&gt;Cliente&lt;/b&gt;&lt;br&gt;[Persona]" vertex="1">
+          <mxGeometry height="90" width="260" x="100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;arcSize=10;fontSize=12;" value="&lt;b&gt;Propietario / Administrador de Sede&lt;/b&gt;&lt;br&gt;[Persona]" vertex="1">
+          <mxGeometry height="90" width="260" x="460" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;arcSize=10;fontSize=12;" value="&lt;b&gt;Administrador del Sistema&lt;/b&gt;&lt;br&gt;[Persona]" vertex="1">
+          <mxGeometry height="90" width="260" x="820" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3B5BB5;fontColor=#ffffff;strokeColor=#1E3A8A;arcSize=8;fontSize=12;" value="&lt;b&gt;App Móvil Cliente&lt;/b&gt;&lt;br&gt;[Contenedor: .NET MAUI]&lt;br&gt;&lt;br&gt;Registro e inicio de sesión, catálogo, reservas híbridas, pagos, QR, reseñas, chatbot y resumen móvil para propietarios" vertex="1">
+          <mxGeometry height="140" width="280" x="90" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3B5BB5;fontColor=#ffffff;strokeColor=#1E3A8A;arcSize=8;fontSize=12;" value="&lt;b&gt;Web Administrativa&lt;/b&gt;&lt;br&gt;[Contenedor: ASP.NET Core MVC]&lt;br&gt;&lt;br&gt;Gestión de usuarios, catálogo físico, calendario de ocupación, matriz de tarifas, conciliación, moderación y dashboard BI" vertex="1">
+          <mxGeometry height="140" width="280" x="830" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E3A8A;fontColor=#ffffff;strokeColor=#142A66;arcSize=6;fontSize=12;" value="&lt;b&gt;API REST - Monolito Modular&lt;/b&gt;&lt;br&gt;[Contenedor: .NET 8/9, DDD, MediatR, EF Core, ML.NET]&lt;br&gt;&lt;br&gt;Módulos: 1) Autenticación y Usuarios, 2) Catálogo Físico, 3) Reservas Híbridas, 4) Pagos y Tarifas Dinámicas, 5) Reputación y Analítica&lt;br&gt;Seguridad con ASP.NET Core Identity y JWT" vertex="1">
+          <mxGeometry height="200" width="380" x="410" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#3B5BB5;fontColor=#ffffff;strokeColor=#1E3A8A;fontSize=12;" value="&lt;b&gt;Base de Datos Relacional&lt;/b&gt;&lt;br&gt;[Contenedor: BD relacional]&lt;br&gt;&lt;br&gt;Usuarios, espacios, reservas, pagos, reseñas (transacciones ACID)" vertex="1">
+          <mxGeometry height="110" width="260" x="230" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#3B5BB5;fontColor=#ffffff;strokeColor=#1E3A8A;fontSize=12;" value="&lt;b&gt;Almacenamiento Multimedia&lt;/b&gt;&lt;br&gt;[Contenedor: sistema de archivos]&lt;br&gt;&lt;br&gt;Galerías fotográficas de sedes y espacios" vertex="1">
+          <mxGeometry height="110" width="260" x="710" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="x1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Pasarela de Pago&lt;/b&gt;&lt;br&gt;[Sistema externo]" vertex="1">
+          <mxGeometry height="100" width="240" x="1300" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Proveedor OAuth 2.0&lt;/b&gt;&lt;br&gt;[Sistema externo]" vertex="1">
+          <mxGeometry height="100" width="240" x="1300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="x3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Azure OpenAI&lt;/b&gt;&lt;br&gt;[Sistema externo]" vertex="1">
+          <mxGeometry height="100" width="240" x="1300" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="x4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;arcSize=10;fontSize=12;" value="&lt;b&gt;Servicio de Mapas&lt;/b&gt;&lt;br&gt;[Sistema externo]" vertex="1">
+          <mxGeometry height="100" width="240" x="1300" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="p1" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c1" value="Usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="p2" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c1" value="Usa (rol Propietario)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="p2" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c2" value="Usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="p3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c2" value="Usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" edge="1" parent="1" source="c1" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c3" value="Consume API&lt;br&gt;[HTTPS/JSON, JWT]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" edge="1" parent="1" source="c2" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c3" value="Consume API&lt;br&gt;[HTTPS/JSON]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" edge="1" parent="1" source="c3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c4" value="Lee y escribe&lt;br&gt;[EF Core / SQL]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" edge="1" parent="1" source="c3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="c5" value="Guarda y recupera&lt;br&gt;imágenes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" edge="1" parent="1" source="c3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="x1" value="Procesa pagos&lt;br&gt;[HTTPS/REST]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" edge="1" parent="1" source="c3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="x2" value="Autentica&lt;br&gt;[OAuth 2.0]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" edge="1" parent="1" source="c3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="x3" value="Chatbot de IA&lt;br&gt;[HTTPS/REST]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" edge="1" parent="1" source="c3" style="endArrow=block;html=1;strokeColor=#334155;fontColor=#334155;fontSize=11;labelBackgroundColor=#ffffff;endFill=1;" target="x4" value="Geolocalización&lt;br&gt;[HTTPS/REST]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9A1B38;fontColor=#ffffff;strokeColor=#7A1530;fontSize=10;" value="Persona" vertex="1">
+          <mxGeometry height="26" width="90" x="1300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3B5BB5;fontColor=#ffffff;strokeColor=#1E3A8A;fontSize=10;" value="Contenedor" vertex="1">
+          <mxGeometry height="26" width="90" x="1400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B7280;fontColor=#ffffff;strokeColor=#4B5563;fontSize=10;" value="Sistema externo" vertex="1">
+          <mxGeometry height="26" width="110" x="1300" y="64" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
